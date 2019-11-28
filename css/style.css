@@ -1,0 +1,395 @@
+@font-face { 
+  font-family: RobotoCondensed;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-BoldItalic.ttf) format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face { 
+  font-family: RobotoCondensed;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: RobotoCondensed;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Italic.ttf) format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face { 
+  font-family: RobotoCondensed;
+  src: url(../fonts/Roboto_Condensed/RobotoCondensed-Regular.ttf) format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face { 
+  font-family: Teko;
+  src: url(../fonts/Teko/Teko-Bold.ttf) format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+*, *:before, *:after {
+	box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  border: none;
+  outline: none;
+  font-family: OpenSans;
+  background: transparent;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+input[type='text'] {
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+} 
+
+a, label {
+  -webkit-tap-highlight-color: transparent;
+}
+
+html, body {
+  margin: 0;
+  font-size: 16px;
+  -webkit-text-size-adjust: none;
+  scroll-behavior: smooth;
+} 
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  background-image: linear-gradient(to bottom, #1a1f28, #11161d);
+}
+
+.logo {
+  position: absolute;
+  left: calc((100% - 1180px) / 2);
+  top: 90px;
+  width: 133px;
+  height: 90px;
+  background: url(../img/logo.svg) no-repeat center;
+}
+
+.cup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 90px calc((100% - 1180px) /2 ); 
+}
+
+.cup-offer {
+  padding-top: 45px; 
+  display: flex;
+  flex-direction: column;
+}
+
+.black-friday {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 435px;
+  height: 300px;
+  background: url(../img/bl_friday.svg) no-repeat center / contain;
+  padding-top: 20px;
+}
+
+.black-friday p {
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  font-family: RobotoCondensed;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.black-friday p span {
+  font-family: Teko;
+  font-size: 80px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: .7;
+  letter-spacing: normal;
+  color: #02d436;
+}
+
+.cup-offer h2 {
+  text-transform: uppercase;
+  transform: rotate(-8deg);
+  font-family: RobotoCondensed;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: italic;
+  line-height: 1.35;
+  letter-spacing: normal;
+  color: #ffffff;
+}
+
+.collapsed {
+  padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 441px;
+  height: 300px;
+  background: url(../img/collapsed.svg) no-repeat center / contain;
+  padding-top: 20px;
+}
+
+.collapsed p {
+  max-width: 350px;
+  transform: rotate(-8deg);
+  font-family: RobotoCondensed;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.33;
+  letter-spacing: 3.6px;
+  color: #ffffff;
+}
+
+.collapsed p span {
+  text-transform: uppercase;
+  font-family: RobotoCondensed;
+  color: #ff2725;
+}
+
+.cup-content {
+  display: flex;
+  flex-direction: column;
+  width: 550px;
+}
+
+.cup-content ul {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.cup-content ul li {
+  display: flex;
+  transform: skewX(-10deg);
+  width: 37px;
+  height: 30px;
+  background-color: #11161d;
+}
+
+.cup-content ul li:not(:last-child) { margin-right: 8px; }
+
+.cup-content ul li a {
+  display: flex;
+  align-items: center; justify-content: center;
+  width: 100%; height: 100%;
+}
+
+.cup-content ul li a svg { transform: skewX(10deg); }
+.cup-content ul li a svg:hover path { fill: #ffffff; transition: .2s ease; }
+
+.file-import {
+  transform: skewX(-10deg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 74px; 
+  box-shadow: 2px 7px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #262f38;
+  padding: 0 16px;
+}
+
+.file-import p {
+  transform: skewX(10deg);
+  font-family: RobotoCondensed;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-style: italic;
+  line-height: 1.78;
+  letter-spacing: 1px;
+  color: #7e858f;
+}
+
+.file-import a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 151px;
+  height: 44px;
+  border: solid 1px #02d436;
+  transition: background .2s ease;
+}
+
+.file-import a p {
+  transform: skewX(10deg);
+  font-family: RobotoCondensed;
+  font-size: 18px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: italic;
+  line-height: 1.78;
+  letter-spacing: 1px;
+  color: #02d436;
+  transition: color .2s ease;
+}
+
+.file-import a:hover { background: #02d436; }
+.file-import a:hover p { color: #11161d; }
+
+.cup-text {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.cup-text h1 {
+  text-transform: uppercase;
+  font-family: RobotoCondensed;
+  font-size: 40px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.35;
+  letter-spacing: 2px;
+  color: #ffffff;
+}
+
+.cup-text p {
+  margin: 16px 0 40px;
+  font-family: RobotoCondensed;
+  font-size: 16px;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.89px;
+  color: rgba(255, 255, 255, .7);
+}
+
+.cup-content form {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.cup-content form input {
+  transform: skewX(-10deg);
+  padding: 0 32px;
+  height: 74px;
+  box-shadow: 2px 7px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #0b0e13;
+  font-family: RobotoCondensed;
+  font-size: 18px;
+  font-weight: normal;
+  font-stretch: condensed;
+  font-style: normal;
+  line-height: 1.78;
+  letter-spacing: 1px;
+  color: #fff;
+}
+
+.cup-content form input:nth-child(1) { max-width: 160px; }
+.cup-content form input:nth-child(2) { max-width: 274px; }
+
+.cup-content button {
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transform: skewX(-10deg);
+  padding: 0 34px;
+  height: 74px;
+  box-shadow: 2px 7px 4px 0 rgba(0, 0, 0, 0.5);
+  background-color: #02d436;
+  font-family: RobotoCondensed;
+  font-size: 16px;
+  font-weight: bold;
+  font-stretch: condensed;
+  font-style: italic;
+  line-height: normal;
+  letter-spacing: 0.89px;
+  color: #11161d;
+  transition: opacity .2s ease;
+} 
+
+.cup-content button:before {
+  content: '';
+  width: 36px;
+  height: 13px;
+  background: url(../img/send.svg) no-repeat center / contain;
+}
+
+.cup-content button:hover { opacity: .8; }
+
+.privacy { 
+  display: flex; 
+  justify-content: center;
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.privacy a {
+  font-family: RobotoCondensed;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: italic;
+  color: rgba(255, 255, 255, .5);
+  transition: color .2s ease;
+}
+
+.privacy a:first-child { margin-right: 16px; }
+
+.privacy a:hover { color: rgba(255, 255, 255, 1); }
+
+
+
+/* MEDIA */
+@media (max-width: 1300px) {
+  .cup { padding: 60px; }
+  .logo { top: 60px; left: 60px; }
+}
+
+@media (max-width: 1100px) {
+  .cup { flex-direction: column; align-items: center; padding-bottom: 0; }
+  .logo { width: 100%; left: 0; }
+  .cup-offer { align-items: center; padding-top: 120px; }
+  .cup-offer h2 { text-align: center; }
+  .cup-content { margin-top: 50px; }
+  .cup-content form { padding-bottom: 60px; }
+  .cup-content ul { order: 10; justify-content: center; margin-bottom: 16px; }
+}
+
+@media (max-width: 640px) {
+  .cup { padding: 60px 24px 0; }
+  .black-friday,
+  .collapsed { width: 100%; height: 200px; align-items: center; padding: 0; }
+  .black-friday p, .collapsed p { font-size: 24px; text-align: center; }
+  .cup-content { width: 100%; }
+  .file-import { flex-direction: column; height: auto; padding: 16px; }
+  .file-import p { text-align: center; margin-bottom: 16px; }
+  .file-import a p { margin: 0; }
+  .cup-content form { width: 100%; flex-direction: column; }
+  .cup-content form input { min-width: 100%; margin-bottom: 24px; }
+}
+
+
+
+
+
