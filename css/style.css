@@ -64,6 +64,9 @@ html, body {
 } 
 
 .main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   width: 100%;
   min-height: 100vh; 
@@ -73,7 +76,7 @@ html, body {
 .logo {
   position: absolute;
   left: calc((100% - 1180px) / 2);
-  top: 90px;
+  top: 45px;
   width: 133px;
   height: 90px;
   background: url(../img/logo.svg) no-repeat center;
@@ -83,7 +86,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 90px calc((100% - 1180px) /2 ); 
+  padding: 45px calc((100% - 1180px) /2 ); 
 }
 
 .cup-offer {
